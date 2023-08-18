@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".dashboard.EmployeeDashboard.EmployeeFragment.Leave.AddLeaveFragment">
+
+    <include
+        android:id="@+id/add_leave_actionbar"
+        layout="@layout/layout_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_0"
+        android:layout_margin="@dimen/dp_8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_leave_actionbar">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/select_leave_type_tv"
+            style="@style/TextView.TextView_14_SP_Header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="8dp"
+            android:padding="@dimen/dp_8"
+            android:paddingStart="@dimen/dp_8"
+            android:text="Leave type"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/select_type_et"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <include
+            android:id="@+id/select_type_et"
+            style="@style/EditTextStyle"
+            layout="@layout/layout_custom_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="0dp"
+            android:editable="false"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:hint="Select item"
+            android:maxLength="10"
+            android:padding="@dimen/dp_0"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/select_leave_type_tv"
+            tools:ignore="TextSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/start_date_tv"
+            style="@style/TextView.TextView_14_SP_Header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:padding="@dimen/dp_8"
+            android:paddingStart="@dimen/dp_8"
+            android:text="Start Date"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/select_type_et" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/start_date_et"
+            style="@style/EditTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:focusable="true"
+            android:layout_marginStart="@dimen/dp_0"
+            android:layout_marginEnd="@dimen/dp_0"
+            android:focusableInTouchMode="false"
+            android:hint="Select Start Date"
+            android:maxLength="10"
+            android:padding="@dimen/dp_8"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/start_date_tv"
+            tools:ignore="TextSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/select_start_date_type_tv"
+            style="@style/TextView.TextView_14_SP_Header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="@dimen/dp_0"
+            android:layout_marginEnd="@dimen/dp_0"
+            android:padding="@dimen/dp_8"
+            android:paddingStart="@dimen/dp_8"
+            android:text="Start Date type"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/start_date_et" />
+
+        <include
+            android:id="@+id/select_start_date_type_et"
+            style="@style/EditTextStyle"
+            layout="@layout/layout_custom_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="0dp"
+            android:editable="false"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:hint="Select item"
+            android:maxLength="10"
+            android:padding="@dimen/dp_0"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/select_start_date_type_tv"
+            tools:ignore="TextSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/end_date_tv"
+            style="@style/TextView.TextView_14_SP_Header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_8"
+            android:layout_marginStart="@dimen/dp_0"
+            android:layout_marginEnd="@dimen/dp_0"
+            android:paddingStart="@dimen/dp_8"
+            android:text="End Date"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/select_start_date_type_et" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/end_date_et"
+            style="@style/EditTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_0"
+            android:layout_marginEnd="@dimen/dp_0"
+            android:editable="false"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:hint="Select End Date"
+            android:maxLength="10"
+            android:padding="@dimen/dp_8"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/end_date_tv"
+            tools:ignore="TextSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/select_end_date_type_tv"
+            style="@style/TextView.TextView_14_SP_Header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_8"
+            android:paddingStart="@dimen/dp_8"
+            android:text="End Date type"
+            android:layout_marginStart="@dimen/dp_0"
+            android:layout_marginEnd="@dimen/dp_0"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/end_date_et" />
+
+        <include
+            android:id="@+id/select_end_date_type_et"
+            style="@style/EditTextStyle"
+            layout="@layout/layout_custom_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="0dp"
+            android:editable="false"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:hint="Select item"
+            android:maxLength="10"
+            android:padding="@dimen/dp_0"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/select_end_date_type_tv"
+            tools:ignore="TextSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/description_tv"
+            style="@style/TextView.TextView_14_SP_Header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_0"
+            android:layout_marginEnd="@dimen/dp_0"
+            android:padding="@dimen/dp_8"
+            android:paddingStart="@dimen/dp_8"
+            android:text="Description"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/select_end_date_type_et" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Review"
+            style="@style/TextView.TextView_14_SP_Header"
+            android:background="@drawable/style_corner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_0"
+            android:layout_marginEnd="@dimen/dp_0"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:maxLength="150"
+            android:paddingStart="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_8"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description_tv" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/submit_leave_btn"
+            style="@style/ButtonStyle.OfficeMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Submit Leave"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Review" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeFragment
+package com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeFragment.Home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.GridLayoutManager
 import com.tupleinfotech.officeproject.Models.employeetasklistitems
-import com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeAdapter.employeetaskadapter
+import com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeAdapter.Employeetaskadapter
 import com.tupleinfotech.officeproject.databinding.FragmentHomeBinding
 
 
@@ -52,7 +52,7 @@ class HomeFragment : Fragment() {
         recyclerviewitemlist.layoutManager = layoutManager
         recyclerviewitemlist.itemAnimator = DefaultItemAnimator()
 
-        val adapter = employeetaskadapter(tasklistitem)
+        val adapter = Employeetaskadapter(tasklistitem)
 
         recyclerviewitemlist.adapter = adapter
 

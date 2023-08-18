@@ -1,4 +1,4 @@
-package com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeFragment
+package com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeFragment.Worksheet
 
 import android.app.DatePickerDialog
 import android.os.Bundle
@@ -8,13 +8,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DefaultItemAnimator
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.tupleinfotech.officeproject.Models.attendancehistorylistitems
 import com.tupleinfotech.officeproject.R
-import com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeAdapter.attendancehistoryadapter
-import com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeAdapter.employeetaskadapter
-import com.tupleinfotech.officeproject.databinding.FragmentHomeBinding
+import com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeAdapter.Attendancehistoryadapter
 import com.tupleinfotech.officeproject.databinding.FragmentWorksheetBinding
 import java.util.Calendar
 
@@ -129,7 +126,11 @@ class WorksheetFragment : Fragment() {
         recyclerviewitemlist.layoutManager = layoutManager
         recyclerviewitemlist.itemAnimator = DefaultItemAnimator()
 
-        val adapter = attendancehistoryadapter(attendancehistorylistitems)
+        val adapter = Attendancehistoryadapter(attendancehistorylistitems)
+
+        adapter.onItemClick = {
+            findNavController().navigate(R.id.sheetDetailsFragment)
+        }
 
         recyclerviewitemlist.adapter = adapter
     }

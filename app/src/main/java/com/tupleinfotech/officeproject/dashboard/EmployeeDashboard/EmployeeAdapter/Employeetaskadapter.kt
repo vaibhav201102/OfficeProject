@@ -6,19 +6,19 @@ import androidx.recyclerview.widget.RecyclerView
 import com.tupleinfotech.officeproject.Models.employeetasklistitems
 import com.tupleinfotech.officeproject.databinding.LayoutEmployeeTasksBinding
 
-class employeetaskadapter(var hostlist : List<employeetasklistitems>) :
-    RecyclerView.Adapter<employeetaskadapter.ViewHolder>() {
+class Employeetaskadapter(var hostlist : List<employeetasklistitems>) :
+    RecyclerView.Adapter<Employeetaskadapter.ViewHolder>() {
 
     inner class ViewHolder(val binding: LayoutEmployeeTasksBinding) : RecyclerView.ViewHolder(binding.root)
 
 
-    override fun onCreateViewHolder(parent: ViewGroup,viewType: Int): employeetaskadapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup,viewType: Int): Employeetaskadapter.ViewHolder {
         val binding = LayoutEmployeeTasksBinding.inflate(LayoutInflater.from(parent.context), parent, false)
 
         return ViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: employeetaskadapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: Employeetaskadapter.ViewHolder, position: Int) {
         val curuntitem = hostlist[position]
 
         with(holder){

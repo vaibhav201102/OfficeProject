@@ -36,10 +36,10 @@ class EmployeedashboardActivity : AppCompatActivity() {
                     navController.navigate(R.id.worksheetFragment)
                 }
                 R.id.bottom_noticeboard_emp -> {
-                    //navController.navigate(R.id.wishlistFragment)
+                    navController.navigate(R.id.leaveFragment)
                 }
                 R.id.bottom_profile_emp -> {
-                    //navController.navigate(R.id.cartFragment)
+                    navController.navigate(R.id.profileDetailsFragment)
                 }
                 else -> {
 

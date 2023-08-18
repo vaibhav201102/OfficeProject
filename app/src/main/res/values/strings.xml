@@ -10,4 +10,21 @@
         <item>Leave</item>
         <item>Holiday</item>
     </string-array>
+
+    <string-array name="leavedaytype">
+        <item>Select leave type</item>
+        <item>Annual</item>
+        <item>Emergency</item>
+        <item>Medical</item>
+        <item>Day Off</item>
+    </string-array>
+
+    <string-array name="startenddatetype">
+        <item>Select type</item>
+        <item>Annual</item>
+        <item>Emergency</item>
+        <item>Medical</item>
+        <item>Day Off</item>
+    </string-array>
+
 </resources>

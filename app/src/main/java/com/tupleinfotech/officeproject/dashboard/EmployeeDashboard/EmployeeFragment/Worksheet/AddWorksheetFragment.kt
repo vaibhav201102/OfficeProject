@@ -1,7 +1,6 @@
-package com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeFragment
+package com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeFragment.Worksheet
 
 import android.annotation.SuppressLint
-import android.app.AlertDialog
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
 import android.os.Bundle
@@ -12,12 +11,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.LinearLayout
-import android.widget.NumberPicker
 import android.widget.TimePicker
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
-import androidx.core.content.ContextCompat
 import androidx.navigation.Navigation
 import com.tupleinfotech.officeproject.R
 import com.tupleinfotech.officeproject.databinding.FragmentAddWorksheetBinding
@@ -59,7 +55,7 @@ class AddWorksheetFragment : Fragment(), TimePickerDialog.OnTimeSetListener  {
         binding.addsheetActionbar.titleText.text = "Add Sheet"
         initback()
         onbackpressed()
-        setPersonalDetailsSpinner()
+        setselectypeSpinner()
         selectDate()
         signindatepicker()
         signoutdatepicker()
@@ -83,7 +79,7 @@ class AddWorksheetFragment : Fragment(), TimePickerDialog.OnTimeSetListener  {
         requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, onBackPressedCallback)
     }
 
-    private fun setPersonalDetailsSpinner() {
+    private fun setselectypeSpinner() {
 
         val genderArrayAdapter = ArrayAdapter.createFromResource(requireContext(), R.array.workingdaytype, R.layout.layout_spinner_item)
 
@@ -95,7 +91,7 @@ class AddWorksheetFragment : Fragment(), TimePickerDialog.OnTimeSetListener  {
             @SuppressLint("SuspiciousIndentation")
             override fun onItemSelected(
                 parent: AdapterView<*>,
-                view: View?,
+                view: View,
                 position: Int,
                 id: Long,
             )  {

@@ -7,17 +7,42 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeFragment.HomeFragment"
+        android:name="com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeFragment.Home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/worksheetFragment"
-        android:name="com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeFragment.WorksheetFragment"
+        android:name="com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeFragment.Worksheet.WorksheetFragment"
         android:label="fragment_worksheet"
         tools:layout="@layout/fragment_worksheet" />
     <fragment
         android:id="@+id/addWorksheetFragment"
-        android:name="com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeFragment.AddWorksheetFragment"
+        android:name="com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeFragment.Worksheet.AddWorksheetFragment"
         android:label="fragment_add_worksheet"
         tools:layout="@layout/fragment_add_worksheet" />
+    <fragment
+        android:id="@+id/leaveFragment"
+        android:name="com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeFragment.Leave.LeaveFragment"
+        android:label="fragment_leave"
+        tools:layout="@layout/fragment_leave" />
+    <fragment
+        android:id="@+id/sheetDetailsFragment"
+        android:name="com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeFragment.Worksheet.SheetDetailsFragment"
+        android:label="fragment_sheet_details"
+        tools:layout="@layout/fragment_sheet_details" />
+    <fragment
+        android:id="@+id/addLeaveFragment"
+        android:name="com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeFragment.Leave.AddLeaveFragment"
+        android:label="fragment_add_leave"
+        tools:layout="@layout/fragment_add_leave" />
+    <fragment
+        android:id="@+id/leaveDetailsFragment"
+        android:name="com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeFragment.Leave.LeaveDetailsFragment"
+        android:label="fragment_leave_details"
+        tools:layout="@layout/fragment_leave_details" />
+    <fragment
+        android:id="@+id/profileDetailsFragment"
+        android:name="com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeFragment.Profile.ProfileDetailsFragment"
+        android:label="fragment_profile_details"
+        tools:layout="@layout/fragment_profile_details" />
 </navigation>
