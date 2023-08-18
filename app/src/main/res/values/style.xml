@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="EditTextStyle">
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">@dimen/dp_14</item>
+        <item name="android:textColor">@color/office_main</item>
+        <item name="android:background">@drawable/style_corner</item>
+        <item name="android:padding">@dimen/dp_10</item>
+        <item name="android:layout_marginStart">@dimen/dp_8</item>
+        <item name="android:layout_marginEnd">@dimen/dp_8</item>
+        <item name="singleLine">true</item>
+        <item name="maxLines">1</item>
+        <item name="android:layout_marginTop">@dimen/dp_8</item>
+        <item name="paddingStart">@dimen/dp_8</item>
+        <item name="elevation">@dimen/dp_5</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textColorHint">@color/gray_light</item>
+        <item name="height">48dp</item>
+    </style>
+
+    <style name="EditTextStyle.line_box">
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">@dimen/dp_14</item>
+        <item name="android:textColor">@color/office_main</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:padding">@dimen/dp_8</item>
+        <item name="android:layout_marginStart">@dimen/dp_8</item>
+        <item name="android:layout_marginEnd">@dimen/dp_8</item>
+        <item name="singleLine">true</item>
+        <item name="maxLines">1</item>
+        <item name="android:layout_marginTop">@dimen/dp_8</item>
+        <item name="paddingStart">@dimen/dp_8</item>
+        <item name="elevation">@dimen/dp_5</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textColorHint">@color/gray_light</item>
+        <item name="height">48dp</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="fontFamily">@font/poppins_semibold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ButtonStyle.OfficeMain">
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:padding">@dimen/dp_4</item>
+        <item name="android:layout_marginStart">@dimen/dp_8</item>
+        <item name="android:layout_marginEnd">@dimen/dp_8</item>
+        <item name="android:layout_marginTop">@dimen/dp_8</item>
+        <item name="android:layout_width">@dimen/dp_150</item>
+        <item name="android:background">@drawable/style_button_office_blue</item>
+    </style>
+
+    <style name="ButtonStyle.OfficeCorner">
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:padding">@dimen/dp_4</item>
+        <item name="android:layout_marginStart">@dimen/dp_8</item>
+        <item name="android:layout_marginEnd">@dimen/dp_8</item>
+        <item name="android:layout_marginTop">@dimen/dp_8</item>
+        <item name="android:layout_width">@dimen/dp_150</item>
+    </style>
+
+    <style name="ButtonStyle.OfficeSimple">
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:layout_marginStart">@dimen/dp_8</item>
+        <item name="android:layout_marginEnd">@dimen/dp_8</item>
+        <item name="android:layout_marginTop">@dimen/dp_8</item>
+        <item name="android:layout_width">@dimen/dp_150</item>
+    </style>
+    
+
+    <style name="TextView">
+        <item name="fontFamily">@font/poppins_semibold</item>
+        <item name="android:textColor">@color/office_main</item>
+    </style>
+
+
+    <style name="TextView.TextView_14_SP_Header">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:layout_marginTop">@dimen/dp_8</item>
+        <item name="android:layout_marginStart">@dimen/dp_8</item>
+        <item name="android:layout_marginBottom">@dimen/dp_8</item>
+        <item name="android:layout_marginEnd">@dimen/dp_8</item>
+    </style>
+
+
+    <style name="TextView.TextView_12_SP_Header">
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:layout_marginTop">@dimen/dp_8</item>
+        <item name="android:layout_marginStart">@dimen/dp_8</item>
+        <item name="android:layout_marginBottom">@dimen/dp_8</item>
+        <item name="singleLine">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView.TextView_10_SP">
+        <item name="android:textSize">@dimen/sp_10</item>
+        <item name="android:layout_marginTop">@dimen/dp_8</item>
+        <item name="android:layout_marginStart">@dimen/dp_8</item>
+        <item name="android:layout_marginBottom">@dimen/dp_8</item>
+        <item name="singleLine">true</item>
+    </style>
+
+
+    <style name="TextView.TextView_36_SP">
+        <!--        <item name="fontFamily">@font/open_sans_bold</item>-->
+        <item name="android:textSize">@dimen/sp_30</item>
+        <item name="android:layout_marginTop">@dimen/dp_10</item>
+        <item name="android:layout_marginStart">@dimen/dp_16</item>
+        <item name="android:layout_marginEnd">@dimen/dp_16</item>
+        <item name="singleLine">true</item>
+        <item name="android:textStyle">bold</item>s
+    </style>
+
+    <style name="TextView.TextView_24_SP">
+        <item name="android:textSize">@dimen/sp_24</item>
+        <item name="android:layout_marginTop">@dimen/dp_10</item>
+        <item name="android:layout_marginStart">@dimen/dp_16</item>
+        <item name="android:layout_marginEnd">@dimen/dp_16</item>
+        <item name="singleLine">true</item>
+
+        <item name="android:textStyle">bold</item>s
+    </style>
+
+    <style name="TextView.TextView_20_SP">
+        <item name="android:textSize">@dimen/dp_20</item>
+        <item name="android:layout_marginTop">@dimen/dp_10</item>
+        <item name="android:layout_marginStart">@dimen/dp_16</item>
+        <item name="android:layout_marginEnd">@dimen/dp_16</item>
+        <item name="singleLine">true</item>
+
+        <item name="android:textStyle">bold</item>s
+    </style>
+
+
+    <style name="TextView.TextView_18_SP">
+        <!--        <item name="fontFamily">@font/open_sans_bold</item>-->
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:layout_marginTop">@dimen/dp_10</item>
+        <item name="android:layout_marginStart">@dimen/dp_16</item>
+        <item name="android:layout_marginEnd">@dimen/dp_16</item>
+        <item name="singleLine">true</item>
+
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="EditTextStyle_OTP">
+        <item name="android:textSize">@dimen/dp_14</item>
+        <item name="android:textColor">@color/office_main</item>
+        <item name="android:textColorHint">@color/office_main</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:gravity">center</item>
+        <item name="android:backgroundTint">@color/office_main</item>
+
+    </style>
+    
+
+    <style name="Body_ThemeOverlay.MaterialComponents.MaterialAlertDialog" parent="@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="materialAlertDialogBodyTextStyle">@style/BodyMaterialAlertDialog.MaterialComponents.Body.Text</item>
+        <item name="android:textColor">@color/office_main</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="BodyMaterialAlertDialog.MaterialComponents.Body.Text" parent="MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="android:textColor">@color/office_main</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="round_img_layout">
+        <item name="android:layout_margin">5dp</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="elevation">@dimen/dp_10</item>
+    </style>
+
+    <style name="Circular">
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="tooltips" parent="Widget.MaterialComponents.Tooltip">
+        <item name="shapeAppearanceOverlay">@style/tooltipShOverylay</item>
+        <item name="backgroundTint">@color/office_main</item>
+        <item name="android:visibility">visible</item>
+    </style>
+    <style name="tooltipShOverylay">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="circleImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColorPrimary">@color/office_main</item>
+        <item name="android:colorAccent">@color/office_main</item>
+    </style>
+
+    <style name="MyTimePickerStyle" parent="@android:style/Widget.Material.Light.TimePicker">
+        <item name="android:timePickerMode">spinner</item>
+    </style>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Dashboard"
+        android:id="@+id/bottom_dashboard_hr"
+        android:icon="@drawable/icon_dashboard"
+        />
+
+
+    <item android:title="MyTeam"
+        android:id="@+id/bottom_attendance_hr"
+        android:icon="@drawable/icon_time"/>
+
+
+    <item android:title="Notice"
+        android:id="@+id/bottom_noticeboard_hr"
+        android:icon="@drawable/icon_notice_board"/>
+
+
+    <item android:title="Profile"
+        android:id="@+id/bottom_profile_hr"
+        android:icon="@drawable/icon_profile"/>
+
+</menu>

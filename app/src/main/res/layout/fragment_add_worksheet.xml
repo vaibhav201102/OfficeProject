@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".dashboard.EmployeeDashboard.EmployeeFragment.AddWorksheetFragment">
+
+    <include
+        android:id="@+id/addsheet_actionbar"
+        layout="@layout/layout_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/dp_0"
+        android:layout_margin="@dimen/dp_8"
+        app:layout_constraintTop_toBottomOf="@+id/addsheet_actionbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp" >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/select_type_tv"
+                style="@style/TextView.TextView_14_SP_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="@dimen/dp_8"
+                android:paddingStart="@dimen/dp_8"
+                android:text="Select type"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/select_type_et"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <include
+                android:id="@+id/select_type_et"
+                layout="@layout/layout_custom_spinner"
+                style="@style/EditTextStyle"
+                android:padding="@dimen/dp_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:editable="false"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:hint="Select item"
+                android:maxLength="10"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/select_type_tv"
+                tools:ignore="TextSizeCheck" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/select_date_tv"
+                style="@style/TextView.TextView_14_SP_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="@dimen/dp_8"
+                android:paddingStart="@dimen/dp_8"
+                android:text="Select Date"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/select_date_et"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/select_type_et" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/select_date_et"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:editable="false"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:hint="Select Date"
+                android:maxLength="10"
+                android:padding="@dimen/dp_8"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/select_date_tv"
+                tools:ignore="TextSizeCheck" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/signin_time_tv"
+                style="@style/TextView.TextView_14_SP_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:layout_marginBottom="8dp"
+                android:padding="@dimen/dp_8"
+                android:paddingStart="@dimen/dp_8"
+                android:text="Sign in Time"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/sign_in_time_et"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.06"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/select_date_et" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/sign_in_time_et"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:hint="Select sign in time"
+                android:padding="@dimen/dp_8"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/signin_time_tv"
+                tools:ignore="TextSizeCheck" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/signout_time_tv"
+                style="@style/TextView.TextView_14_SP_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:padding="@dimen/dp_8"
+                android:paddingStart="@dimen/dp_8"
+                android:text="Sign out Time"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sign_in_time_et" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/sign_out_time_et"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:editable="false"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:hint="Select sign out time"
+                android:padding="@dimen/dp_8"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/signout_time_tv"
+                tools:ignore="TextSizeCheck" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/break_time_tv"
+                style="@style/TextView.TextView_14_SP_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:padding="@dimen/dp_8"
+                android:paddingStart="@dimen/dp_8"
+                android:text="Break Time"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sign_out_time_et" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/breaktime_et"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:hint="Select break time"
+                android:padding="@dimen/dp_8"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/break_time_tv"
+                tools:ignore="TextSizeCheck" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/project_name_tv"
+                style="@style/TextView.TextView_14_SP_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:padding="@dimen/dp_8"
+                android:paddingStart="@dimen/dp_8"
+                android:text="Project Name"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.06"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/breaktime_et" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/project_name_et"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Project Name"
+                android:padding="@dimen/dp_8"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/project_name_tv" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/project_module_name_tv"
+                style="@style/TextView.TextView_14_SP_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:padding="@dimen/dp_8"
+                android:paddingStart="@dimen/dp_8"
+                android:text="Project Modules"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.06"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/project_name_et" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/project_module_name_et"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Project Modules"
+                android:padding="@dimen/dp_8"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/project_module_name_tv" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/description_tv"
+                style="@style/TextView.TextView_14_SP_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:padding="@dimen/dp_8"
+                android:paddingStart="@dimen/dp_8"
+                android:text="Description"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.06"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/project_module_name_et" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Review"
+                style="@style/TextView.TextView_14_SP_Header"
+                android:background="@drawable/style_corner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:maxLength="150"
+                android:paddingStart="@dimen/dp_8"
+                android:paddingTop="@dimen/dp_8"
+                android:textColorHint="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/description_tv" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/go_btn"
+                style="@style/ButtonStyle.OfficeMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Submit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Review" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Dashboard"
+        android:id="@+id/bottom_dashboard_admin"
+        android:icon="@drawable/icon_dashboard"
+        />
+
+
+    <item android:title="MyTeam"
+        android:id="@+id/bottom_attendance_admin"
+        android:icon="@drawable/icon_team"/>
+
+
+    <item android:title="Menu3"
+        android:id="@+id/bottom_Menu3_admin"
+        android:icon="@drawable/icon_menu3"
+        />
+
+
+    <item android:title="Notice"
+        android:id="@+id/bottom_noticeboard_admin"
+        android:icon="@drawable/icon_notice_board"/>
+
+
+    <item android:title="Profile"
+        android:id="@+id/bottom_profile_admin"
+        android:icon="@drawable/icon_profile"/>
+
+</menu>
