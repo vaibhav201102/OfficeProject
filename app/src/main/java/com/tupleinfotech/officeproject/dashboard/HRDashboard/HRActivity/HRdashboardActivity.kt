@@ -2,7 +2,6 @@ package com.tupleinfotech.officeproject.dashboard.HRDashboard.HRActivity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.tupleinfotech.officeproject.R
 import com.tupleinfotech.officeproject.databinding.ActivityHrdashboardBinding
 
 class HRdashboardActivity : AppCompatActivity() {

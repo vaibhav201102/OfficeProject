@@ -45,4 +45,9 @@
         android:name="com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeFragment.Profile.ProfileDetailsFragment"
         android:label="fragment_profile_details"
         tools:layout="@layout/fragment_profile_details" />
+    <fragment
+        android:id="@+id/monthlyReportFragment"
+        android:name="com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeFragment.Home.MonthlyReportFragment"
+        android:label="fragment_monthly_report"
+        tools:layout="@layout/fragment_monthly_report" />
 </navigation>

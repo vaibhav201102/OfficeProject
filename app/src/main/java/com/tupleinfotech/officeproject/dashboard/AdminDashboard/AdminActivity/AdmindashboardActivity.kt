@@ -2,9 +2,7 @@ package com.tupleinfotech.officeproject.dashboard.AdminDashboard.AdminActivity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.tupleinfotech.officeproject.R
 import com.tupleinfotech.officeproject.databinding.ActivityAdmindashboardBinding
-import com.tupleinfotech.officeproject.databinding.ActivityLoginBinding
 
 class AdmindashboardActivity : AppCompatActivity() {
 

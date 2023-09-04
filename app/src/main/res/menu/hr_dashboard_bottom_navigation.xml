@@ -11,6 +11,11 @@
         android:id="@+id/bottom_attendance_hr"
         android:icon="@drawable/icon_time"/>
 
+    <item android:title="Menu3"
+        android:id="@+id/bottom_Menu3_admin"
+        android:icon="@drawable/icon_menu3"
+        />
+
 
     <item android:title="Notice"
         android:id="@+id/bottom_noticeboard_hr"

@@ -10,6 +10,7 @@ class Employeetaskadapter(var hostlist : List<employeetasklistitems>) :
     RecyclerView.Adapter<Employeetaskadapter.ViewHolder>() {
 
     inner class ViewHolder(val binding: LayoutEmployeeTasksBinding) : RecyclerView.ViewHolder(binding.root)
+    var onItemClick: ((employeetasklistitems) -> Unit)? = null
 
 
     override fun onCreateViewHolder(parent: ViewGroup,viewType: Int): Employeetaskadapter.ViewHolder {
@@ -23,8 +24,17 @@ class Employeetaskadapter(var hostlist : List<employeetasklistitems>) :
 
         with(holder){
             with(hostlist[position]){
-
                 binding.appCompatTextView.text = curuntitem.taskname
+
+                if (position == 2) {
+                    holder.itemView.setOnClickListener {
+                        // Handle click on the 3rd item here
+                        onItemClick?.invoke(hostlist[position])
+                    }
+                } else {
+                    // For other items, you can set a different click behavior or no click behavior
+                    holder.itemView.setOnClickListener(null) // Disable click
+                }
             }
         }
     }

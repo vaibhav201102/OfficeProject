@@ -17,19 +17,19 @@
             android:exported="false" />
         <activity
             android:name=".dashboard.HRDashboard.HRActivity.HRdashboardActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Login.LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".dashboard.EmployeeDashboard.EmployeeActivity.EmployeedashboardActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Login.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dashboard.EmployeeDashboard.EmployeeActivity.EmployeedashboardActivity"
+            android:exported="false"/>
     </application>
 
 </manifest>

@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.activity.OnBackPressedCallback
 import androidx.navigation.Navigation
 import com.tupleinfotech.officeproject.R
-import com.tupleinfotech.officeproject.databinding.FragmentLeaveBinding
 import com.tupleinfotech.officeproject.databinding.FragmentLeaveDetailsBinding
 
 class LeaveDetailsFragment : Fragment() {
