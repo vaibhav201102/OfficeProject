@@ -11,6 +11,12 @@ import com.tupleinfotech.officeproject.databinding.LayoutHrTasksBinding
 class HRtaskAdapter(var hostlist : List<employeetasklistitems>) :
     RecyclerView.Adapter<HRtaskAdapter.ViewHolder>() {
     inner class ViewHolder(val binding: LayoutHrTasksBinding) : RecyclerView.ViewHolder(binding.root)
+    var onItemClick: ((employeetasklistitems) -> Unit)? = null
+    var onItemClick1: ((employeetasklistitems) -> Unit)? = null
+    var onItemClick2: ((employeetasklistitems) -> Unit)? = null
+    var onItemClick3: ((employeetasklistitems) -> Unit)? = null
+    var onItemClick4: ((employeetasklistitems) -> Unit)? = null
+    var onItemClick5: ((employeetasklistitems) -> Unit)? = null
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -30,6 +36,32 @@ class HRtaskAdapter(var hostlist : List<employeetasklistitems>) :
         with(holder) {
             with(hostlist[position]) {
                 binding.appCompatTextView.text = curuntitem.taskname
+
+                if (position == 0) {
+                    holder.itemView.setOnClickListener {
+                        onItemClick?.invoke(hostlist[position])
+                    }
+                } else if (position == 1) {
+                    holder.itemView.setOnClickListener {
+                        onItemClick1?.invoke(hostlist[position])
+                    }
+                }else if (position == 2) {
+                    holder.itemView.setOnClickListener {
+                        onItemClick2?.invoke(hostlist[position])
+                    }
+                }else if (position == 3) {
+                    holder.itemView.setOnClickListener {
+                        onItemClick3?.invoke(hostlist[position])
+                    }
+                }else if (position == 4) {
+                    holder.itemView.setOnClickListener {
+                        onItemClick4?.invoke(hostlist[position])
+                    }
+                }else if (position == 5) {
+                    holder.itemView.setOnClickListener {
+                        onItemClick5?.invoke(hostlist[position])
+                    }
+                }
             }
         }
     }

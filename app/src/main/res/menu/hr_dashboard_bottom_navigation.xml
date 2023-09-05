@@ -12,7 +12,7 @@
         android:icon="@drawable/icon_time"/>
 
     <item android:title="Menu3"
-        android:id="@+id/bottom_Menu3_admin"
+        android:id="@+id/bottom_Menu3_hr"
         android:icon="@drawable/icon_menu3"
         />
 

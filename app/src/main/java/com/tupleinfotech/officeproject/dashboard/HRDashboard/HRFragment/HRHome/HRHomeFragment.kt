@@ -1,18 +1,19 @@
-package com.tupleinfotech.officeproject.dashboard.HRDashboard.HRFragment
+package com.tupleinfotech.officeproject.dashboard.HRDashboard.HRFragment.HRHome
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.GridLayoutManager
-import com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeAdapter.Employeetaskadapter
 import com.tupleinfotech.officeproject.Models.employeetasklistitems
+import com.tupleinfotech.officeproject.R
 import com.tupleinfotech.officeproject.dashboard.HRDashboard.HRAdapter.HRtaskAdapter
 import com.tupleinfotech.officeproject.databinding.FragmentHomeBinding
 
-class HomeFragment : Fragment() {
+class HRHomeFragment : Fragment() {
 
     private var _binding : FragmentHomeBinding?= null
     private val binding get() =  _binding!!
@@ -58,6 +59,27 @@ class HomeFragment : Fragment() {
 
         val adapter = HRtaskAdapter(tasklistitem)
 
+        adapter.onItemClick = {
+            //MY Tasks
+        }
+        adapter.onItemClick1 = {
+            findNavController().navigate(R.id.HRInterviewListFragment)
+            //Interview
+        }
+        adapter.onItemClick2 = {
+            findNavController().navigate(R.id.HRMeetingListFragment)
+            //Meeting
+        }
+        adapter.onItemClick3 = {
+            //My team
+        }
+        adapter.onItemClick4 = {
+            findNavController().navigate(R.id.HRCallDetailsFragment)
+            //Call Details
+        }
+        adapter.onItemClick5 = {
+            //Timesheet
+        }
 
         recyclerviewitemlist.adapter = adapter
 

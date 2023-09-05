@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".dashboard.HRDashboard.HRFragment.HRMeetings.HRAddMeetingFragment">
+
+    <include
+        android:id="@+id/add_meeting_actionbar"
+        layout="@layout/layout_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/Date_tv"
+        style="@style/TextView.TextView_14_SP_Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="@dimen/dp_8"
+        android:textColor="@color/black"
+        android:paddingStart="@dimen/dp_8"
+        android:text="Date"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_meeting_actionbar" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/select_date_et"
+        style="@style/EditTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_0"
+        android:editable="false"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:hint="Select Date"
+        android:maxLength="10"
+        android:padding="@dimen/dp_8"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Date_tv" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/time_tv"
+        style="@style/TextView.TextView_14_SP_Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_0"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="@dimen/dp_8"
+        android:textColor="@color/black"
+        android:paddingStart="@dimen/dp_8"
+        android:text="Time"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_date_et" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/select_time_et"
+        style="@style/EditTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_0"
+        android:editable="false"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:hint="Select Time"
+        android:maxLength="10"
+        android:padding="@dimen/dp_8"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_tv" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_tv"
+        style="@style/TextView.TextView_14_SP_Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/dp_0"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="@dimen/dp_8"
+        android:paddingStart="@dimen/dp_8"
+        android:text="Title"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_time_et" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/enter_title_et"
+        style="@style/EditTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_0"
+        android:hint="Enter title"
+        android:maxLength="10"
+        android:padding="@dimen/dp_8"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_tv" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/description_tv"
+        style="@style/TextView.TextView_14_SP_Header"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_0"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:padding="@dimen/dp_8"
+        android:paddingStart="@dimen/dp_8"
+        android:text="Description"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_title_et" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/description_et"
+        style="@style/TextView.TextView_14_SP_Header"
+        android:background="@drawable/style_corner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_0"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:lines="6"
+        android:maxLength="200"
+        android:paddingStart="@dimen/dp_8"
+        android:paddingTop="@dimen/dp_8"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description_tv" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submit_btn"
+        style="@style/ButtonStyle.OfficeMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description_et" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

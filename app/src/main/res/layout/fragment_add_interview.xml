@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".dashboard.HRDashboard.HRFragment.HRInterviews.HRAddInterviewFragment">
+
+    <include
+        android:id="@+id/Addinterview_actionbar"
+        layout="@layout/layout_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Addinterview_actionbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/can_name_tv"
+                style="@style/TextView.TextView_14_SP_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:padding="@dimen/dp_8"
+                android:paddingStart="@dimen/dp_8"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.06"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/can_name_et"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_0"
+                android:hint="Enter Name"
+                android:padding="@dimen/dp_8"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/can_name_tv" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/dept_name_tv"
+                style="@style/TextView.TextView_14_SP_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_0"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:padding="@dimen/dp_8"
+                android:paddingStart="@dimen/dp_8"
+                android:text="Department"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.06"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/can_name_et" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/dept_name_et"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_0"
+                android:hint="Select Department"
+                android:padding="@dimen/dp_8"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dept_name_tv" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/work_exp_tv"
+                style="@style/TextView.TextView_14_SP_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_0"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:padding="@dimen/dp_8"
+                android:paddingStart="@dimen/dp_8"
+                android:text="Work Experience"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.06"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dept_name_et" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/work_exp_et"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_0"
+                android:hint="Select Experience"
+                android:padding="@dimen/dp_8"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/work_exp_tv" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/no_of_yrs_tv"
+                style="@style/TextView.TextView_14_SP_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_0"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:padding="@dimen/dp_8"
+                android:paddingStart="@dimen/dp_8"
+                android:text="No. of years"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.06"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/work_exp_et" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/no_of_yrs_et"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_0"
+                android:hint="Enter years of experience"
+                android:padding="@dimen/dp_8"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/no_of_yrs_tv" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/current_comp_tv"
+                style="@style/TextView.TextView_14_SP_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_0"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:padding="@dimen/dp_8"
+                android:paddingStart="@dimen/dp_8"
+                android:text="Current company"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.06"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/no_of_yrs_et" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/current_comp_et"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_0"
+                android:hint="Enter company name"
+                android:padding="@dimen/dp_8"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/current_comp_tv" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/can_location_tv"
+                style="@style/TextView.TextView_14_SP_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_0"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:padding="@dimen/dp_8"
+                android:paddingStart="@dimen/dp_8"
+                android:text="Candidate location"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.06"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/current_comp_et" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/can_location_et"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_0"
+                android:hint="Enter location"
+                android:padding="@dimen/dp_8"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/can_location_tv" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/interviewer_name_tv"
+                style="@style/TextView.TextView_14_SP_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_0"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:padding="@dimen/dp_8"
+                android:paddingStart="@dimen/dp_8"
+                android:text="Interviewer name"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.06"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/can_location_et" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/interviewer_name_et"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_0"
+                android:hint="Select interviewer"
+                android:padding="@dimen/dp_8"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/interviewer_name_tv" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/schedule_date_tv"
+                style="@style/TextView.TextView_14_SP_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_0"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:padding="@dimen/dp_8"
+                android:paddingStart="@dimen/dp_8"
+                android:text="Schedule date"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.06"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/interviewer_name_et" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/schedule_date_et"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_0"
+                android:hint="Select date"
+                android:focusable="false"
+                android:editable="false"
+                android:padding="@dimen/dp_8"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/schedule_date_tv" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/Interviewer_type_tv"
+                style="@style/TextView.TextView_14_SP_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_0"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:padding="@dimen/dp_8"
+                android:paddingStart="@dimen/dp_8"
+                android:text="Interviewer type"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.06"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/schedule_date_et" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/Interviewer_type_et"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_0"
+                android:hint="Select type"
+                android:padding="@dimen/dp_8"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Interviewer_type_tv" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/round_tv"
+                style="@style/TextView.TextView_14_SP_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_0"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:padding="@dimen/dp_8"
+                android:paddingStart="@dimen/dp_8"
+                android:text="Round"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.06"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Interviewer_type_et" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/round_et"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_0"
+                android:hint="Enter round"
+                android:padding="@dimen/dp_8"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/round_tv" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/status_tv"
+                style="@style/TextView.TextView_14_SP_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_0"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:padding="@dimen/dp_8"
+                android:paddingStart="@dimen/dp_8"
+                android:text="Status"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.06"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/round_et" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/status_et"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_0"
+                android:hint="Enter status"
+                android:padding="@dimen/dp_8"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/status_tv" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/opinion_tv"
+                style="@style/TextView.TextView_14_SP_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:padding="@dimen/dp_8"
+                android:paddingStart="@dimen/dp_8"
+                android:text="Opinion"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/status_et" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/opinion_et"
+                style="@style/TextView.TextView_14_SP_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/style_corner"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:maxLength="150"
+                android:paddingStart="@dimen/dp_8"
+                android:paddingTop="@dimen/dp_8"
+                android:textColorHint="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/opinion_tv" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/submit_btn"
+                style="@style/ButtonStyle.OfficeMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Submit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/opinion_et" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

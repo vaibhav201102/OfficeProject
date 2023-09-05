@@ -3,11 +3,71 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph_employeedashboard"
-    app:startDestination="@id/homeFragment2">
+    app:startDestination="@id/hrhomeFragment">
 
     <fragment
-        android:id="@+id/homeFragment2"
-        android:name="com.tupleinfotech.officeproject.dashboard.HRDashboard.HRFragment.HomeFragment"
+        android:id="@+id/hrhomeFragment"
+        android:name="com.tupleinfotech.officeproject.dashboard.HRDashboard.HRFragment.HRHome.HRHomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/HrProfileDetailsFragment"
+        android:name="com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeFragment.Profile.ProfileDetailsFragment"
+        android:label="fragment_profile_details"
+        tools:layout="@layout/fragment_profile_details" />
+    <fragment
+        android:id="@+id/HRAddWorksheetFragment"
+        android:name="com.tupleinfotech.officeproject.dashboard.HRDashboard.HRFragment.HRWorksheet.HRAddWorksheetFragment"
+        android:label="HRAddWorksheetFragment"
+        tools:layout="@layout/fragment_add_worksheet"/>
+    <fragment
+        android:id="@+id/HRSheetDetailsFragment"
+        android:name="com.tupleinfotech.officeproject.dashboard.HRDashboard.HRFragment.HRWorksheet.HRSheetDetailsFragment"
+        android:label="HRSheetDetailsFragment"
+        tools:layout="@layout/fragment_sheet_details"/>
+    <fragment
+        android:id="@+id/HRWorksheetFragment"
+        android:name="com.tupleinfotech.officeproject.dashboard.HRDashboard.HRFragment.HRWorksheet.HRWorksheetFragment"
+        android:label="HRWorksheetFragment"
+        tools:layout="@layout/fragment_worksheet" />
+    <fragment
+        android:id="@+id/HRnoticeBoardFragment"
+        android:name="com.tupleinfotech.officeproject.dashboard.HRDashboard.HRFragment.HRNoticeBoard.HRNoticeBoardFragment"
+        android:label="fragment_notice_board"
+        tools:layout="@layout/fragment_notice_board" />
+    <fragment
+        android:id="@+id/HRAddNoticeFragment"
+        android:name="com.tupleinfotech.officeproject.dashboard.HRDashboard.HRFragment.HRNoticeBoard.HRAddNoticeFragment"
+        android:label="fragment_add_notice"
+        tools:layout="@layout/fragment_add_notice" />
+    <fragment
+        android:id="@+id/HRInterviewListFragment"
+        android:name="com.tupleinfotech.officeproject.dashboard.HRDashboard.HRFragment.HRInterviews.HRInterviewListFragment"
+        android:label="fragment_interview_list"
+        tools:layout="@layout/fragment_interview_list" />
+    <fragment
+        android:id="@+id/HRAddInterviewFragment"
+        android:name="com.tupleinfotech.officeproject.dashboard.HRDashboard.HRFragment.HRInterviews.HRAddInterviewFragment"
+        android:label="fragment_add_interview"
+        tools:layout="@layout/fragment_add_interview" />
+    <fragment
+        android:id="@+id/HRMeetingListFragment"
+        android:name="com.tupleinfotech.officeproject.dashboard.HRDashboard.HRFragment.HRMeetings.HRMeetingListFragment"
+        android:label="fragment_meeting_list"
+        tools:layout="@layout/fragment_meeting_list" />
+    <fragment
+        android:id="@+id/HRAddMeetingFragment"
+        android:name="com.tupleinfotech.officeproject.dashboard.HRDashboard.HRFragment.HRMeetings.HRAddMeetingFragment"
+        android:label="fragment_add_meeting"
+        tools:layout="@layout/fragment_add_meeting" />
+    <fragment
+        android:id="@+id/HRCallDetailsFragment"
+        android:name="com.tupleinfotech.officeproject.dashboard.HRDashboard.HRFragment.HRCallDetails.HRCallDetailsFragment"
+        android:label="fragment_call_details"
+        tools:layout="@layout/fragment_call_details" />
+    <fragment
+        android:id="@+id/HRAddCallFragment"
+        android:name="com.tupleinfotech.officeproject.dashboard.HRDashboard.HRFragment.HRCallDetails.HRAddCallFragment"
+        android:label="fragment_add_call"
+        tools:layout="@layout/fragment_add_call" />
 </navigation>

@@ -1,4 +1,4 @@
-package com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeFragment.Worksheet
+package com.tupleinfotech.officeproject.dashboard.HRDashboard.HRFragment.HRWorksheet
 
 import android.annotation.SuppressLint
 import android.app.DatePickerDialog
@@ -14,7 +14,6 @@ import android.widget.ArrayAdapter
 import android.widget.TimePicker
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
-import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import com.tupleinfotech.officeproject.R
 import com.tupleinfotech.officeproject.databinding.FragmentAddWorksheetBinding
@@ -23,7 +22,7 @@ import java.util.Calendar
 import java.util.Locale
 
 
-class AddWorksheetFragment : Fragment(), TimePickerDialog.OnTimeSetListener  {
+class HRAddWorksheetFragment : Fragment(), TimePickerDialog.OnTimeSetListener  {
 
     private var _binding : FragmentAddWorksheetBinding?= null
     private val binding get() =  _binding!!
