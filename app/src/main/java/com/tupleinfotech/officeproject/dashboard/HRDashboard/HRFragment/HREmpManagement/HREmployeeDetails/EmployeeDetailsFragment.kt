@@ -1,4 +1,4 @@
-package com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeFragment.Worksheet
+package com.tupleinfotech.officeproject.dashboard.HRDashboard.HRFragment.HREmpManagement.HREmployeeDetails
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,13 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.activity.OnBackPressedCallback
-import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import com.tupleinfotech.officeproject.R
-import com.tupleinfotech.officeproject.databinding.FragmentSheetDetailsBinding
+import com.tupleinfotech.officeproject.databinding.FragmentEmpDetailsBinding
+import com.tupleinfotech.officeproject.databinding.FragmentEmployeeDetailsBinding
 
-class SheetDetailsFragment : Fragment() {
-    private var _binding : FragmentSheetDetailsBinding?= null
+class EmployeeDetailsFragment : Fragment() {
+
+    private var _binding : FragmentEmployeeDetailsBinding?= null
     private val binding get() =  _binding!!
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,27 +25,23 @@ class SheetDetailsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentSheetDetailsBinding.inflate(inflater,container,false)
+        _binding = FragmentEmployeeDetailsBinding.inflate(inflater,container,false)
         val view = binding.root
-        // Inflate the layout for this fragment
-
-        binding.sheetDetailsActionbar.titleText.text = "Sheet Details"
 
         init()
 
         return view
     }
-
     private fun init(){
+        binding.employeeDetailsActionbar.titleText.text = "Employee Details"
         initback()
         onBackPressed()
     }
     private fun initback(){
-        binding.sheetDetailsActionbar.arrowBnt.setOnClickListener {
+        binding.employeeDetailsActionbar.arrowBnt.setOnClickListener {
             findNavController().popBackStack()
         }
     }
-
     private fun onBackPressed(){
         val onBackPressedCallback = object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
@@ -53,4 +50,5 @@ class SheetDetailsFragment : Fragment() {
         }
         requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, onBackPressedCallback)
     }
+
 }

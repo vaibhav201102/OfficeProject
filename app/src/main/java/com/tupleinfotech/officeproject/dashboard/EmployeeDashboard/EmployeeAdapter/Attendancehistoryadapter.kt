@@ -1,12 +1,14 @@
 package com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeAdapter
 
 import android.view.LayoutInflater
+import android.view.View.GONE
+import android.view.View.VISIBLE
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.tupleinfotech.officeproject.Models.attendancehistorylistitems
 import com.tupleinfotech.officeproject.databinding.LayoutAttendanceHistoryBinding
 
-class Attendancehistoryadapter(var hostlist : List<attendancehistorylistitems>):
+class Attendancehistoryadapter(var hostlist : List<attendancehistorylistitems>,var isfromdashboard : Boolean):
     RecyclerView.Adapter<Attendancehistoryadapter.ViewHolder>(){
 
     var onItemClick: ((attendancehistorylistitems) -> Unit)? = null
@@ -29,13 +31,26 @@ class Attendancehistoryadapter(var hostlist : List<attendancehistorylistitems>):
         with(holder){
             with(hostlist[position]){
 
-                binding.dateTv.text = curuntitem.date
-                binding.moduleNameTv.text = curuntitem.description
-                binding.workedHrsTv.text = curuntitem.attendancehrs
-                binding.startEndtimeTv.text = curuntitem.startendtime
+                if (isfromdashboard == true) {
+                    binding.dateTv.text = curuntitem.date
+                    binding.moduleNameTv.text = curuntitem.description
+                    binding.workedHrsTv.text = curuntitem.attendancehrs
+                    binding.startEndtimeTv.text = curuntitem.startendtime
+                    binding.nameTv.visibility = VISIBLE
 
-                holder.itemView.setOnClickListener {
-                    onItemClick?.invoke(hostlist[position])
+                    holder.itemView.setOnClickListener {
+                        onItemClick?.invoke(hostlist[position])
+                    }
+                }else{
+                    binding.dateTv.text = curuntitem.date
+                    binding.moduleNameTv.text = curuntitem.description
+                    binding.workedHrsTv.text = curuntitem.attendancehrs
+                    binding.startEndtimeTv.text = curuntitem.startendtime
+                    binding.nameTv.visibility = GONE
+
+                    holder.itemView.setOnClickListener {
+                        onItemClick?.invoke(hostlist[position])
+                    }
                 }
             }
         }

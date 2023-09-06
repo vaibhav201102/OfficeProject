@@ -10,81 +10,78 @@
     android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/history_cl"
+        android:id="@+id/list_cl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/start_endtime_tv"
+            android:id="@+id/type_tv"
             style="@style/TextView.TextView_14_SP_Header"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dp_8"
             android:layout_marginTop="16dp"
             android:paddingStart="@dimen/dp_8"
-            android:text="12:12 AM - 11:59 PM"
-            app:layout_constraintEnd_toStartOf="@+id/worked_hrs_tv"
+            android:text="Type"
+            app:layout_constraintEnd_toStartOf="@+id/status_txt_tv"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/status_txt_tv"
             style="@style/TextView.TextView_14_SP_Header"
-            android:id="@+id/worked_hrs_tv"
-            android:text="24 hrs"
+            android:text="Rejected"
             android:paddingEnd="@dimen/dp_8"
+            android:textColor="@color/black"
             android:textAlignment="textEnd"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/dp_8"
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/start_endtime_tv"
+            app:layout_constraintStart_toEndOf="@+id/type_tv"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/name_tv"
+            android:id="@+id/duration_tv"
             style="@style/TextView.TextView_14_SP_Header"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:visibility="gone"
+            android:layout_marginEnd="8dp"
             android:paddingStart="@dimen/dp_8"
-            android:text="Name"
+            android:text="From Date - To Date(99 Days)"
+            android:textColor="@color/office_buttonColor"
+            app:layout_constraintEnd_toStartOf="@+id/duration_date_tv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/type_tv" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/duration_date_tv"
+            style="@style/TextView.TextView_14_SP_Header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/dp_8"
+            android:text="99/99/9999"
+            android:textAlignment="textEnd"
             android:textColor="@color/office_buttonColor"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/start_endtime_tv" />
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toEndOf="@+id/duration_tv"
+            app:layout_constraintTop_toBottomOf="@+id/status_txt_tv" />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/module_name_tv"
+            android:id="@+id/desc_tv"
             style="@style/TextView.TextView_14_SP_Header"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/dp_8"
-            android:layout_marginTop="@dimen/dp_16"
             android:layout_marginBottom="16dp"
             android:paddingStart="@dimen/dp_8"
-            android:text="OP"
-            android:textColor="@color/black"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/date_tv"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/name_tv" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/date_tv"
-            style="@style/TextView.TextView_14_SP_Header"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/dp_8"
-            android:layout_marginBottom="16dp"
-            android:paddingEnd="@dimen/dp_8"
-            android:text="12/12/2023"
-            android:textAlignment="textEnd"
+            android:text="Description"
             android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/module_name_tv" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/duration_tv" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

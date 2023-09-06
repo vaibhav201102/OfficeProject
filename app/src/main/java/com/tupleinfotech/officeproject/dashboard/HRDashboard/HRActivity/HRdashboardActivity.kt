@@ -36,7 +36,7 @@ class HRdashboardActivity : AppCompatActivity() {
                     navController.navigate(R.id.HRWorksheetFragment)
                 }
                 R.id.bottom_Menu3_hr -> {
-//                    navController.navigate(R.id.leaveFragment)
+//                    navController.navigate(R.id.HRLeaveManagementFragment)
                 }
                 R.id.bottom_noticeboard_hr -> {
                     navController.navigate(R.id.HRnoticeBoardFragment)

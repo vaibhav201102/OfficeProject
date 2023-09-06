@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".dashboard.HRDashboard.HRFragment.HREmpManagement.HRLeaveManagement.HRLeaveManagementFragment">
+
+    <include
+        android:id="@+id/Leave_management_actionbar"
+        layout="@layout/layout_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.tupleinfotech.officeproject.utils.CircularProgressBar
+        android:id="@+id/leave_baalnce_circle"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Leave_management_actionbar" />
+
+    <TextView
+        android:id="@+id/leave_balance"
+        style="@style/TextView.TextView_18_SP"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="5\nLeave Balance"
+        app:layout_constraintBottom_toBottomOf="@+id/leave_baalnce_circle"
+        app:layout_constraintEnd_toEndOf="@+id/leave_baalnce_circle"
+        app:layout_constraintStart_toStartOf="@+id/leave_baalnce_circle"
+        app:layout_constraintTop_toTopOf="@+id/leave_baalnce_circle" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/leave_balance_cl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leave_baalnce_circle">
+
+
+        <TextView
+            android:id="@+id/total_leave_txt"
+            style="@style/TextView.TextView_12_SP_Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_circle"
+            android:drawablePadding="@dimen/dp_4"
+            android:drawableTint="@color/gray"
+            android:gravity="center"
+            android:text="Total Leave"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/total_leave_digits"
+            style="@style/TextView.TextView_18_SP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="99"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/total_leave_txt"
+            app:layout_constraintStart_toStartOf="@+id/total_leave_txt"
+            app:layout_constraintTop_toBottomOf="@+id/total_leave_txt" />
+
+        <TextView
+            android:id="@+id/leave_taken_txt"
+            style="@style/TextView.TextView_12_SP_Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:drawableLeft="@drawable/icon_circle"
+            android:drawablePadding="@dimen/dp_4"
+            android:drawableTint="@color/office_main"
+            android:gravity="center"
+            android:text="Leave Taken"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/leave_taken_digits"
+            style="@style/TextView.TextView_18_SP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="99"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/leave_taken_txt"
+            app:layout_constraintStart_toStartOf="@+id/leave_taken_txt"
+            app:layout_constraintTop_toBottomOf="@+id/leave_taken_txt" />
+
+        <com.tupleinfotech.officeproject.utils.CircularProgressBar
+            android:id="@+id/casual_leave_circle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/total_leave_digits"
+            app:layout_constraintStart_toStartOf="@+id/total_leave_digits"
+            app:layout_constraintTop_toBottomOf="@+id/total_leave_digits" />
+
+        <TextView
+            android:id="@+id/casual_leave_digits"
+            style="@style/TextView.TextView_18_SP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/casual_leave_circle"
+            app:layout_constraintEnd_toEndOf="@+id/casual_leave_circle"
+            app:layout_constraintStart_toStartOf="@+id/casual_leave_circle"
+            app:layout_constraintTop_toTopOf="@+id/casual_leave_circle" />
+
+        <TextView
+            android:id="@+id/casual_leave_txt_tv"
+            style="@style/TextView.TextView_12_SP_Header"
+            android:layout_marginStart="@dimen/dp_0"
+            android:layout_marginEnd="@dimen/dp_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Casual Leave"
+            app:layout_constraintEnd_toEndOf="@+id/casual_leave_circle"
+            app:layout_constraintStart_toStartOf="@+id/casual_leave_circle"
+            app:layout_constraintTop_toBottomOf="@+id/casual_leave_circle" />
+
+        <com.tupleinfotech.officeproject.utils.CircularProgressBar
+            android:id="@+id/medical_leave_circle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            app:layout_constraintBottom_toBottomOf="@+id/casual_leave_circle"
+            app:layout_constraintEnd_toStartOf="@+id/annual_leave_circle"
+            app:layout_constraintStart_toEndOf="@+id/casual_leave_circle"
+            app:layout_constraintTop_toTopOf="@+id/casual_leave_circle"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/medical_leave_digits"
+            style="@style/TextView.TextView_18_SP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/medical_leave_circle"
+            app:layout_constraintEnd_toEndOf="@+id/medical_leave_circle"
+            app:layout_constraintStart_toStartOf="@+id/medical_leave_circle"
+            app:layout_constraintTop_toTopOf="@+id/medical_leave_circle" />
+
+        <TextView
+            android:id="@+id/medical_leave_txt_tv"
+            style="@style/TextView.TextView_12_SP_Header"
+            android:layout_marginStart="@dimen/dp_0"
+            android:layout_marginEnd="@dimen/dp_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medical Leave"
+            app:layout_constraintEnd_toEndOf="@+id/medical_leave_circle"
+            app:layout_constraintStart_toStartOf="@+id/medical_leave_circle"
+            app:layout_constraintTop_toBottomOf="@+id/medical_leave_circle" />
+
+        <com.tupleinfotech.officeproject.utils.CircularProgressBar
+            android:id="@+id/annual_leave_circle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="9dp"
+            app:layout_constraintEnd_toEndOf="@+id/leave_taken_digits"
+            app:layout_constraintStart_toStartOf="@+id/leave_taken_digits"
+            app:layout_constraintTop_toBottomOf="@+id/leave_taken_digits" />
+
+        <TextView
+            android:id="@+id/annual_leave_digits"
+            style="@style/TextView.TextView_18_SP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/annual_leave_circle"
+            app:layout_constraintEnd_toEndOf="@+id/annual_leave_circle"
+            app:layout_constraintStart_toStartOf="@+id/annual_leave_circle"
+            app:layout_constraintTop_toTopOf="@+id/annual_leave_circle" />
+
+        <TextView
+            android:id="@+id/annual_leave_txt_tv"
+            style="@style/TextView.TextView_12_SP_Header"
+            android:layout_marginStart="@dimen/dp_0"
+            android:layout_marginEnd="@dimen/dp_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Annual Leave"
+            app:layout_constraintEnd_toEndOf="@+id/annual_leave_circle"
+            app:layout_constraintStart_toStartOf="@+id/annual_leave_circle"
+            app:layout_constraintTop_toBottomOf="@+id/annual_leave_circle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/leave_details_item_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leave_balance_cl" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

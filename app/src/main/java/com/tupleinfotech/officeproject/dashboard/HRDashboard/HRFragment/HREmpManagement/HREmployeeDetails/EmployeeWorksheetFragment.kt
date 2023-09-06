@@ -1,11 +1,14 @@
-package com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeFragment.Worksheet
+package com.tupleinfotech.officeproject.dashboard.HRDashboard.HRFragment.HREmpManagement.HREmployeeDetails
 
 import android.app.DatePickerDialog
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
+import android.view.View.GONE
+import android.view.View.VISIBLE
 import android.view.ViewGroup
+import androidx.activity.OnBackPressedCallback
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -15,7 +18,7 @@ import com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeAdapt
 import com.tupleinfotech.officeproject.databinding.FragmentWorksheetBinding
 import java.util.Calendar
 
-class WorksheetFragment : Fragment() {
+class EmployeeWorksheetFragment : Fragment() {
 
     private var _binding : FragmentWorksheetBinding?= null
     private val binding get() =  _binding!!
@@ -46,11 +49,28 @@ class WorksheetFragment : Fragment() {
         attendancehistory()
 
         binding.empSheetActionbar.titleText.text = "Employee Sheet"
-        binding.empSheetActionbar.arrowBnt.visibility = View.GONE
 
-        binding.btnAddEntry.setOnClickListener {
-            findNavController().navigate(R.id.addWorksheetFragment)
+        binding.btnAddEntry.visibility = GONE
+
+        binding.goBtn.visibility = GONE
+        binding.searchEmpGoBtn.visibility = VISIBLE
+        binding.SelectEmpEt.visibility = VISIBLE
+
+        initback()
+        onBackPressed()
+    }
+    private fun initback(){
+        binding.empSheetActionbar.arrowBnt.setOnClickListener {
+            findNavController().popBackStack()
         }
+    }
+    private fun onBackPressed(){
+        val onBackPressedCallback = object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                findNavController().popBackStack()
+            }
+        }
+        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, onBackPressedCallback)
     }
     private fun selectDate() {
         val c = Calendar.getInstance()
@@ -126,10 +146,10 @@ class WorksheetFragment : Fragment() {
         recyclerviewitemlist.layoutManager = layoutManager
         recyclerviewitemlist.itemAnimator = DefaultItemAnimator()
 
-        val adapter = Attendancehistoryadapter(attendancehistorylistitems,false)
+        val adapter = Attendancehistoryadapter(attendancehistorylistitems,true)
 
         adapter.onItemClick = {
-            findNavController().navigate(R.id.sheetDetailsFragment)
+            findNavController().navigate(R.id.HRsheetDetailsFragment)
         }
 
         recyclerviewitemlist.adapter = adapter

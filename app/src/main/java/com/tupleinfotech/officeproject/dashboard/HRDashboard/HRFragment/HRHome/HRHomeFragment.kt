@@ -71,6 +71,7 @@ class HRHomeFragment : Fragment() {
             //Meeting
         }
         adapter.onItemClick3 = {
+            findNavController().navigate(R.id.HRempManagementFragment)
             //My team
         }
         adapter.onItemClick4 = {

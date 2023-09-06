@@ -126,7 +126,7 @@ class HRWorksheetFragment : Fragment() {
         recyclerviewitemlist.layoutManager = layoutManager
         recyclerviewitemlist.itemAnimator = DefaultItemAnimator()
 
-        val adapter = Attendancehistoryadapter(attendancehistorylistitems)
+        val adapter = Attendancehistoryadapter(attendancehistorylistitems,false)
 
         adapter.onItemClick = {
             findNavController().navigate(R.id.HRSheetDetailsFragment)

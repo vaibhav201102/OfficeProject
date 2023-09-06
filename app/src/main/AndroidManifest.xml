@@ -29,7 +29,8 @@
             android:exported="false" />
         <activity
             android:name=".dashboard.EmployeeDashboard.EmployeeActivity.EmployeedashboardActivity"
-            android:exported="false"/>
+            android:exported="false">
+        </activity>
     </application>
 
 </manifest>

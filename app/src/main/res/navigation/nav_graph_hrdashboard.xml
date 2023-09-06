@@ -70,4 +70,39 @@
         android:name="com.tupleinfotech.officeproject.dashboard.HRDashboard.HRFragment.HRCallDetails.HRAddCallFragment"
         android:label="fragment_add_call"
         tools:layout="@layout/fragment_add_call" />
+    <fragment
+        android:id="@+id/HRempManagementFragment"
+        android:name="com.tupleinfotech.officeproject.dashboard.HRDashboard.HRFragment.HREmpManagement.HREmpManagementFragment"
+        android:label="fragment_emp_management"
+        tools:layout="@layout/fragment_emp_management" />
+    <fragment
+        android:id="@+id/HREmpDetailsFragment"
+        android:name="com.tupleinfotech.officeproject.dashboard.HRDashboard.HRFragment.HREmpManagement.HREmpDetailsFragment"
+        android:label="fragment_emp_details"
+        tools:layout="@layout/fragment_emp_details" />
+    <fragment
+        android:id="@+id/employeeDetailsFragment"
+        android:name="com.tupleinfotech.officeproject.dashboard.HRDashboard.HRFragment.HREmpManagement.HREmployeeDetails.EmployeeDetailsFragment"
+        android:label="fragment_employee_details"
+        tools:layout="@layout/fragment_employee_details" />
+    <fragment
+        android:id="@+id/employeeWorksheetFragment"
+        android:name="com.tupleinfotech.officeproject.dashboard.HRDashboard.HRFragment.HREmpManagement.HREmployeeDetails.EmployeeWorksheetFragment"
+        android:label="EmployeeWorksheetFragment"
+        tools:layout="@layout/fragment_worksheet"/>
+    <fragment
+        android:id="@+id/HRsheetDetailsFragment"
+        android:name="com.tupleinfotech.officeproject.dashboard.EmployeeDashboard.EmployeeFragment.Worksheet.SheetDetailsFragment"
+        android:label="fragment_sheet_details"
+        tools:layout="@layout/fragment_sheet_details" />
+    <fragment
+        android:id="@+id/HRLeaveManagementFragment"
+        android:name="com.tupleinfotech.officeproject.dashboard.HRDashboard.HRFragment.HREmpManagement.HRLeaveManagement.HRLeaveManagementFragment"
+        android:label="fragment_leave_management"
+        tools:layout="@layout/fragment_leave_management" />
+    <fragment
+        android:id="@+id/HRSalarySlipFragment"
+        android:name="com.tupleinfotech.officeproject.dashboard.HRDashboard.HRFragment.HRSalarySlip.HRSalarySlipFragment"
+        android:label="fragment_salary_slip"
+        tools:layout="@layout/fragment_salary_slip" />
 </navigation>
